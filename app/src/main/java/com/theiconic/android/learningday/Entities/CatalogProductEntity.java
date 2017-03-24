@@ -18,6 +18,30 @@ public class CatalogProductEntity {
     @SerializedName("short_description")
     private String shortDescription;
 
+    public String getSku() {
+        return sku;
+    }
+
+    public String getName() {
+        return name;
+    }
+
+    public String getShortDescription() {
+        return shortDescription;
+    }
+
+    public double getPrice() {
+        return price;
+    }
+
+    public double getFinalPrice() {
+        return finalPrice;
+    }
+
+    public Embedded getEmbedded() {
+        return embedded;
+    }
+
     @SerializedName("price")
     private double price;
 
