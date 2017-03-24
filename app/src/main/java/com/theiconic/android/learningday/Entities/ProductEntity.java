@@ -21,8 +21,17 @@ public class ProductEntity {
     @SerializedName("_embedded")
     private Embedded embedded;
 
+    public Embedded getEmbedded() {
+        return embedded;
+    }
+
     private static class Embedded {
         @SerializedName("product")
-        private List<CatalogProductEntity> products;
+        public List<CatalogProductEntity> products;
+
+    }
+
+    public List<CatalogProductEntity> getProducts() {
+        return getEmbedded().products;
     }
 }
