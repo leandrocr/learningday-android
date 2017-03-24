@@ -12,13 +12,13 @@ import android.widget.TextView;
 public class DetailsActivity extends AppCompatActivity {
     private TextView name;
     private TextView description;
-    
+
     protected void onCreate(@Nullable Bundle savedInstanceState){
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_detail;
+        setContentView(R.layout.activity_detail);
 
         name = (TextView) findViewById(R.id.name);
-        description = (TextView) findViewById(R.id.description;
+        description = (TextView) findViewById(R.id.description);
 
     }
 }
